@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
+    "@types/node": "22.15.18",
+    "@types/react": "19.1.4",
     "react": "^19.1.0",
     "react-cli": "^0.3.1",
-    "vite": "^6.3.5",
-    "vite-cli": "^1.0.0"
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react-dom": "^19.1.0"
   }
 }
