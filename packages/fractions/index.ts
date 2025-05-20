@@ -1,5 +1,8 @@
-module.exports.Fraction = class Fraction {
-  constructor(nominator, denominator) {
+export default class Fraction {
+  nom: number;
+  den: number;
+
+  constructor(nominator: number, denominator: number) {
     if (denominator === 0) {
       throw Error("Denominator equals zero");
     }
@@ -7,27 +10,27 @@ module.exports.Fraction = class Fraction {
     this.den = denominator;
   }
 
-  add(F) {
+  add(F: Fraction) {
     if (this.den === F.den) {
       return new Fraction(this.nom + F.nom, this.den);
     }
   }
 
-  sub(F) {
+  sub(F: Fraction) {
     if (this.den === F.den) {
       return new Fraction(this.nom - F.nom, this.den);
     }
   }
 
-  mult(F) {
+  mult(F: Fraction) {
     return new Fraction(this.nom * F.nom, this.den * F.den);
   }
 
-  div(F) {
+  div(F: Fraction) {
     return new Fraction(this.nom * F.den, this.den * F.nom);
   }
 
   toString() {
-    return `${nom}/${den}`;
+    return `${this.nom}/${this.den}`;
   }
-};
+}
