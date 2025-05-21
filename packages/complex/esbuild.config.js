@@ -8,7 +8,7 @@ esbuild
     target: "node22",
     minify: true,
     bundle: true,
-    outfile: "index.js",
+    outdir: "./dist",
   })
   .catch((e) => {
     console.error(e);
