@@ -1,0 +1,20 @@
+{
+  "name": "@maths/complex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./esbuild.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "...": "link:..."
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4",
+    "esbuild-plugin-tsc": "^0.5.0"
+  }
+}
