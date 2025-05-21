@@ -3,12 +3,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const f = new Fraction(1, 2);
-  console.log(f.toString());
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>app1</h1>
+        <h1>app1: {new Fraction(1, 2).toString()}</h1>
         <Image className={styles.logo} src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
         <ol>
           <li>
