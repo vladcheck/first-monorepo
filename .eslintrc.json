@@ -3,7 +3,8 @@
     "next/core-web-vitals",
     "next/typescript",
     "plugin:prettier/reccomended",
-    "plugin:@next/next/recommended"
+    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/eslint-plugin"
   ],
   "parserOptions": {
     "ecmaVersion": "latest"
