@@ -4,7 +4,7 @@ export default class Fraction {
 
   constructor(nominator: number, denominator: number) {
     if (denominator === 0) {
-      throw Error("Denominator equals zero");
+      throw Error('Denominator equals zero');
     }
     this.nom = nominator;
     this.den = denominator;
