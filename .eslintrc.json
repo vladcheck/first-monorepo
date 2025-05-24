@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:prettier/reccomended",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["eslint-config-next", "react"],
+  "rules": {
+    "no-var": "error",
+    "prefer-const": "warn",
+    "react-prop-types": "on",
+    "react/react-in-jsx-scope": "on",
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
